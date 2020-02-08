@@ -9,11 +9,11 @@ package Mola;
  *
  * @author bhanuka
  */
-public class CountIncrease {
+public class Test {
     
     static int count =0;
 
-    public CountIncrease() {
+    public Test() {
         count++;
     }
     
@@ -22,7 +22,7 @@ public class CountIncrease {
     public static void main(String[] args) {
         
         for (int i = 0; i < 10; i++) {
-            CountIncrease t = new CountIncrease();
+            Test t = new Test();
         }
         
         System.out.println(count);

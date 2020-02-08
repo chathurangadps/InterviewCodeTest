@@ -3,16 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Basics;
+package Mola;
 
 /**
  *
  * @author bhanuka
  */
-final class test {
+public class SubstringMola {
 
-    public test() {
+    public static void main(String[] args) {
+
+        String test = "KeriMolagePuka";
+
+        String Name = test.substring(4, 8);
+        System.out.println(Name);
+
     }
-    
-    final void m(){}
 }
