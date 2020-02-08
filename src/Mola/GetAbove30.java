@@ -73,7 +73,7 @@ public class GetAbove30 implements calculations {
 
 }
 
-class Student {
+ class Student {
 
     private int age;
     private String name;
