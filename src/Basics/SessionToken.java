@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CodeTest;
+package Basics;
 
 import java.security.SecureRandom;
 import java.util.Base64;

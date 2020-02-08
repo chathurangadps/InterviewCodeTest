@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CodeTest;
+package Accelero;
 
 /**
  *
@@ -15,12 +15,13 @@ public class reverseText {
         String txt = "Bhanuka";
         String reverseText = "";
 
-        System.out.println("txt.length()" + txt.length());
+        StringBuilder builder = new StringBuilder(txt);
+        System.out.println("First Way is to reverse " + builder.reverse());
 
         for (int i = txt.length(); i > 0; i--) {
             reverseText += txt.charAt(i - 1);
         }
 
-        System.out.println("This is reverse text : " + reverseText);
+        System.out.println("Second Way is to reverse " + reverseText);
     }
 }
