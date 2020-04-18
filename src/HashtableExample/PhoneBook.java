@@ -18,4 +18,6 @@ public interface PhoneBook {
     public void remove(String Number);
 
     public void showall();
+    
+    boolean validateNumber(String number);
 }

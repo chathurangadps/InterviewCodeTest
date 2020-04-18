@@ -21,12 +21,17 @@ public class PhonebookMaker implements PhoneBook {
 
     @Override
     public void add(String number, String name) {
-        if (phoneBook.containsKey(number)) {
-            System.out.println(number + " already exists");
+        if (validateNumber(number)) {
+            if (phoneBook.containsKey(number)) {
+                System.out.println(number + " already exists");
+            } else {
+                phoneBook.put(number, name);
+                System.out.println("Contact was added successfully.");
+            }
         } else {
-            phoneBook.put(number, name);
-            System.out.println("Contact was added successfully.");
+            System.out.println("Invalid formate of Phone Number");
         }
+
     }
 
     @Override
@@ -60,5 +65,15 @@ public class PhonebookMaker implements PhoneBook {
             System.out.println("No available Contacts");
         }
 
+    }
+
+    public boolean validateNumber(String number) {
+
+        String regex = "^[0-9]{10}$";
+
+        if (number.matches(regex)) {
+            return true;
+        }
+        return false;
     }
 }

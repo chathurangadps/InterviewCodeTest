@@ -11,7 +11,7 @@ package Keymaster;
  */
 public class Regextest {
     public static void main(String[] args) {
-        String consumerKey= "deleteroute1.blackboard.com";
+        String consumerKey= "deleteroute1.codebyb.com";
         String[] cKey = consumerKey.split("\\.");
         System.out.println(cKey[0]);
     }
